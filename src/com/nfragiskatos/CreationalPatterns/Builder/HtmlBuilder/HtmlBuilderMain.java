@@ -1,6 +1,6 @@
-package com.nfragiskatos.CreationalPatterns.Builder;
+package com.nfragiskatos.CreationalPatterns.Builder.HtmlBuilder;
 
-public class BuilderMain {
+public class HtmlBuilderMain {
 
     public static void main(String[] args) {
         HtmlBuilder builder = new HtmlBuilder("ul")

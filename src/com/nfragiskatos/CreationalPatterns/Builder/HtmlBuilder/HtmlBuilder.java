@@ -1,4 +1,4 @@
-package com.nfragiskatos.CreationalPatterns.Builder;
+package com.nfragiskatos.CreationalPatterns.Builder.HtmlBuilder;
 
 public class HtmlBuilder {
     private String rootName;

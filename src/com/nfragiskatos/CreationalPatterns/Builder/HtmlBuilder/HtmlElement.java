@@ -1,4 +1,4 @@
-package com.nfragiskatos.CreationalPatterns.Builder;
+package com.nfragiskatos.CreationalPatterns.Builder.HtmlBuilder;
 
 import java.util.ArrayList;
 import java.util.Collections;
