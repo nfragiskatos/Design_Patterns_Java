@@ -10,7 +10,7 @@ import java.util.Dictionary;
 import java.util.Hashtable;
 import java.util.List;
 
-public class SingletonDatabase {
+public class SingletonDatabase implements Database {
 
     private Dictionary<String, Integer> capitals = new Hashtable<>();
     private static final SingletonDatabase INSTANCE = new SingletonDatabase();
