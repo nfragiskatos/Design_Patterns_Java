@@ -13,6 +13,11 @@ public class StaticBlockSingleton {
     }
 
 
+    /*
+    Makes sense, because even outside the scope of the Singleton patter we want to use static blocks when a class
+    has static members that require complex initialization.
+    The instance member is just like any other static member, but special in the case of this pattern.
+     */
     static {
         try {
             instance = new StaticBlockSingleton();
