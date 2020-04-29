@@ -12,7 +12,7 @@ import java.util.stream.Stream;
 
 /**
  * Decorator design pattern facilitates the addition of behaviors to individual objects without inheriting from them.
- * This will probably just be a wrapper around the object.
+ * This is essentially just a wrapper around the object.
  *
  * Some classes you can't inherit from because they are final, like String.
  * If you can't inherit from it but need to expand its functionality you will have to aggregate/wrap the actual object, by
