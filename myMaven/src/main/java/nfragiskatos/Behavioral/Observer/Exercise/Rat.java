@@ -11,8 +11,10 @@ public class Rat implements Closeable {
     public Rat(Game game) {
         this.game = game;
         game.ratEnters.subscribe((sender, arg) -> {
-            ++attack;
-            game.notifyRat.invoke(this, (Rat) sender);
+            if (sender != this) {
+                ++attack;
+                game.notifyRat.invoke(this, (Rat) sender);
+            }
         });
         game.notifyRat.subscribe((sender, rat) -> {
             if (rat == this) ++attack;
@@ -23,6 +25,7 @@ public class Rat implements Closeable {
 
     @Override
     public void close() throws IOException {
+        // rat dies ;(
         game.ratDies.invoke(this, null);
     }
 }
